@@ -147,6 +147,11 @@ ul, ol {
     background-color: #1C1D21;
 }
 
+.intro {
+    text-align: left;
+    list-style: disc
+}
+
 
 /* --  background image section  -- */
 
