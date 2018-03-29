@@ -125,13 +125,13 @@ ul, ol {
 }
 
 .md-padding {
-    padding-top: 120px;
+    /*padding-top: 120px;*/
     padding-bottom: 120px;
 }
 
 .sm-padding {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 
@@ -1134,13 +1134,81 @@ header {
 /*------------------------------------*\
 	Blog post
 \*------------------------------------*/
+/* -- Header -- */
+.blog-photo {
+    background-image:  url(../img/IOT_pyboard_hello_pyladies.JPG);
+    background-size: cover;
+    background-position-y: center;
+    height: 340px;
+}
 
+#blog-title {
+    text-align: left;
+    color: crimson;
+    display: block;
+}
+
+.bold {
+    font-weight: bold;
+
+}
+
+.crimson {
+    color: crimson;
+}
+
+/* -- Main blog -- */
 #main .blog .blog-content {
   padding: 20px 0px 0px;
 }
 
 #main .blog {
   margin-top: 0px;
+}
+
+
+.blog-main-photo {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+
+.blog-main-photo img {
+    height: 30vh;
+    margin: auto;
+    padding: 10px;
+}
+
+.blog-main-photo.logo {
+    justify-content: center;
+}
+
+.logo img {
+    height: 12vh;
+    width: 12vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#resources {
+    width: 75%;
+    padding-top: 30px;
+}
+
+#resources ul{
+    list-style-type: circle;
+    color: crimson;
+    padding-left: 10px;
+}
+
+#resources ul li a, #resources ul p{
+    color: #868F9B;
+}
+
+#resources ul li a:hover{
+    color: crimson;
 }
 
 /* -- blog tags -- */
@@ -1164,8 +1232,8 @@ header {
 }
 
 .blog-tags a:hover {
-  color: #FFF;
-  background-color: #6195FF;
+    color: #FFF;
+    background-color: #6195FF;
 }
 
 .blog-tags a i {
@@ -1174,7 +1242,7 @@ header {
 }
 
 .blog-tags a:hover i {
-  color: #FFF;
+    color: #FFF;
 }
 
 
@@ -1507,6 +1575,9 @@ header {
   .section-header h2.title {
   		font-size:31.5px;
 	}
+    .blog-photo {
+        height: 240px;
+    }
 
   .main-btn , .default-btn , .outline-btn , .white-btn  {
   		padding: 8px 22px;
@@ -1552,7 +1623,13 @@ header {
       margin-left: 0px;
   }
 
-
+  .blog-photo {
+        height: 140px;
+    }  
+    
+    #blog-title {
+    font-size: x-large;
+    }
 
   .blog-author .media .media-left {
       display: block;
@@ -1573,6 +1650,10 @@ header {
   .blog-comments .media .media {
       margin:0px -15px;
   }
+    
+    #resources ul li a {
+        color: crimson;
+    }
 }
 
 
